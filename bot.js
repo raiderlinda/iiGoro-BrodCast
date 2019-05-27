@@ -89,3 +89,7 @@ m.sendMessage(args)
    
    }
    });
+
+
+
+client.login(process.env.TOKEN);
