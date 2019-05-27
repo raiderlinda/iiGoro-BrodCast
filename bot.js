@@ -85,11 +85,11 @@ client.on('message', message => {
 
  message.author.sendMessage(`**Help|هيلب
 
-       $obc | لأرسال برود كاست للكل
+       -bc | لأرسال برود كاست للكل
 
-       $bc  |  لأرسال برود كاست للأونلاين
+       -bc  |  لأرسال برود كاست للأونلاين
 
-       $adminbc | برودكاست عادي
+       -adminbc | برودكاست عادي
 
        **`);
 
