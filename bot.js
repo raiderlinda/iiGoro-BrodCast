@@ -4,7 +4,7 @@ var prefix = "$"
 var adminprefix = '$'
 
 
-//bc
+
 
 client.on("message", message => {
     if (message.content.startsWith("$obc")) {
