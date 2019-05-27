@@ -4,7 +4,7 @@ var prefix = "$"
 var adminprefix = '$'
 
 
-
+//bc
 
 client.on("message", message => {
     if (message.content.startsWith("$obc")) {
@@ -90,7 +90,7 @@ m.sendMessage(args)
    }
    });
 
-const developers = ["472553752457641987","id"]
+const developers = ["472553752457641987"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
