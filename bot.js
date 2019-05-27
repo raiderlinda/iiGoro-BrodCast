@@ -74,18 +74,16 @@ m.sendMessage(args)
 }
 });
 
-  client.on('message', msg => {
-    if(msg.content === '-help')
-    msg.reply('Check Your DM :white_check_mark:')
-  });
-  
-  
-  client.on("message", message => {
-    if (message.content === "!help") {
-     const embed = new Discord.RichEmbed() 
-         .setColor("#00FF00")
-         .setThumbnail(message.author.avatarURL)
-         .setDescription(`**Help|هيلب
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help") {
+		 message.channel.send('**تم ارسالك في الخاص**');
+            
+	
+		 
+
+
+ message.author.sendMessage(`**Help|هيلب
 
        $obc | لأرسال برود كاست للكل
 
@@ -93,11 +91,10 @@ m.sendMessage(args)
 
        $adminbc | برودكاست عادي
 
-       ** `)
-   message.author.sendEmbed(embed)
-   
-   }
-   });
+       **`);
+
+    }
+})
 
 
 client.login(process.env.TOKEN);
