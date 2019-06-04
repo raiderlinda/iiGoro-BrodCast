@@ -1,16 +1,11 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
-var prefix = "-";
-client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : EX Clan`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
-    console.log(`----------------`);
+const { Client, RichEmbed } = require("discord.js");
+var { Util } = require('discord.js');
+const Discord = require('discord.js');
+client.on('ready', () => { 
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Black server`,"http://twitch.tv/Death Shop")
+client.user.setGame(`By Zeus`)
 client.user.setStatus("dnd")
-})
+});
 
 
 //bc
